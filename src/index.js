@@ -1,7 +1,4 @@
-'use strict'
-
-const boardWidth = 10
-const boardHeight = 24
+import Board from './board'
 
 const init = () => {
   $('body').append(Board.create())

@@ -1,4 +1,5 @@
-'use strict'
+const boardWidth = 10
+const boardHeight = 24
 
 const Board = (function() {
 
@@ -30,3 +31,5 @@ const Board = (function() {
   }
 
 }())
+
+export default Board
