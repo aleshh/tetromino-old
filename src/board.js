@@ -1,11 +1,10 @@
-const boardWidth = 10
-const boardHeight = 24
+import config from './config.js'
 
 const Board = (function() {
 
   const makeRow = (rowId) => {
     const $row = $('<tr>')
-    for (let j = 0; j < boardWidth; j++) {
+    for (let j = 0; j < config.boardWidth; j++) {
       const id = cellId(rowId, j)
       $row.append(makeCell(id))
     }
@@ -23,7 +22,7 @@ const Board = (function() {
   return {
     create: () => {
       const $board = $('<table>')
-      for (let i = 0; i < boardHeight; i++) {
+      for (let i = 0; i < config.boardHeight; i++) {
         $board.append(makeRow(i))
       }
       return $board

@@ -1,3 +1,4 @@
 module.exports = {
-  watch: true
+  watch: true,
+  mode: 'development'
 }
