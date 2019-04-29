@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/aleshh/tetromino#readme",
   "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-jest": "^24.7.1",
     "enzyme": "^3.9.0",
     "jest": "^24.7.1",
     "jest-enzyme": "^7.0.2",
