@@ -15,8 +15,8 @@ const Board = (function() {
   const makeCell = (id) => $('<td>').attr("id", id)
 
   const cellId = (row, cell) => {
-    let id =  (row > 9) ? "" + row : "0" + row
-    id += (cell > 9) ? cell : "0" + cell
+    let id = (cell > 9) ? cell : "0" + cell
+    id +=  (row > 9) ? "" + row : "0" + row
     return id
   }
 
