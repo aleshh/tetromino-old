@@ -7,6 +7,9 @@
     "test": "jest --watch",
     "build": "webpack"
   },
+  "jest": {
+    "setupFiles": ["./setup-jest.js"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aleshh/tetromino.git"
@@ -25,6 +28,7 @@
     "enzyme": "^3.9.0",
     "jest": "^24.7.1",
     "jest-enzyme": "^7.0.2",
+    "jquery": "^3.4.0",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1"
   }

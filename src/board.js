@@ -1,4 +1,5 @@
 import config from './config.js'
+import $ from 'jquery'
 
 const Board = (function() {
 
