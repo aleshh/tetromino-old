@@ -1,5 +1,6 @@
 import Piece from './piece'
 import pieceTypes from './piece-types'
+import pieceLayouts from './piece-layouts'
 
 describe('Piece object functions correctly', () => {
   const piece = new Piece
