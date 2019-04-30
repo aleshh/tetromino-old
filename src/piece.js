@@ -19,4 +19,11 @@ export default class Piece {
       case 6: return pieceTypes.Z
     }
   }
+
+  rotate() {
+    this.rotation++
+    if (this.rotation === 4) {
+      this.rotation = 0
+    }
+  }
 }

@@ -26,4 +26,22 @@ describe('Piece object functions correctly', () => {
   test('Constructor returns piece with a valid rotation', () => {
     expect(piece.rotation).toEqual(0)
   })
+
+  test('Piece rotatation updates', () => {
+    const piece = new Piece
+    for (let i = 0; i < 6; i++) {
+      piece.rotate()
+    }
+    expect(piece.rotation).toEqual(2)
+  })
+
+  test('Piece I returns correct squares', () => {
+
+  })
+  test('Piece L returns correct squares', () => {
+
+  })
+  test('Piece L returns correct squares when rotated', () => {
+
+  })
 })
