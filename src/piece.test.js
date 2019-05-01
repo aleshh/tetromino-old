@@ -37,12 +37,46 @@ describe('Piece object functions correctly', () => {
   })
 
   test('Piece I returns correct squares', () => {
+    const piece = new Piece
+    piece.type = pieceTypes.J
 
+    const pieceLayout = piece.render()
+    const expectedLayout = pieceLayouts[pieceTypes.J][0]
+
+    expect(pieceLayout).toEqual(expectedLayout)
   })
+
   test('Piece L returns correct squares', () => {
+    const piece = new Piece
+    piece.type = pieceTypes.L
 
+    const pieceLayout = piece.render()
+    const expectedLayout = pieceLayouts[pieceTypes.L][0]
+
+    expect(pieceLayout).toEqual(expectedLayout)
   })
-  test('Piece L returns correct squares when rotated', () => {
 
+  test('Piece L returns correct squares when rotated', () => {
+    const piece = new Piece
+    piece.type = pieceTypes.L
+    piece.rotate()
+    piece.rotate()
+
+    const pieceLayout = piece.render()
+    const expectedLayout = pieceLayouts[pieceTypes.L][2]
+
+    expect(pieceLayout).toEqual(expectedLayout)
+  })
+
+  test('Piece T returns correct squares, deep check', () => {
+    const piece = new Piece
+    piece.type = pieceTypes.T
+
+    const pieceLayout = piece.render()
+    const firstSquare = pieceLayout[0][0]
+    const secondSquare = pieceLayout[0][1]
+
+    expect(firstSquare).toBeFalsy()
+    expect(secondSquare).toBeTruthy()
   })
 })

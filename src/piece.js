@@ -1,4 +1,5 @@
 import pieceTypes from './piece-types'
+import pieceLayouts from './piece-layouts'
 
 export default class Piece {
   constructor() {
@@ -25,5 +26,9 @@ export default class Piece {
     if (this.rotation === 4) {
       this.rotation = 0
     }
+  }
+
+  render() {
+    return pieceLayouts[this.type][this.rotation]
   }
 }
